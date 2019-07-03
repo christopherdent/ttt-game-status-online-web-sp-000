@@ -55,6 +55,7 @@ end
 
 def draw?(board)
 
+<<<<<<< HEAD
 if full?(board) && !won?(board)
   return true
 else
@@ -83,3 +84,15 @@ def winner(board)
 end 
 
 
+=======
+    draw_board = ["X", "O", "X", "O", "X", "X", "O", "X", "O"]
+  draw?(draw_board) #=> true
+ 
+  x_diagonal_won = ["X", "O", "X", "O", "X", "O", "O", "O", "X"]
+  draw?(x_diagonal_won) #=> false
+ 
+  incomplete_board = ["X", " ", "X", " ", "X", " ", "O", "O", "X"]
+  draw?(incomplete_board) #=> false
+end 
+
+>>>>>>> 54afe14039e67613b341f4a84ded0e04f15f6459
